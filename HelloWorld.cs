@@ -13,6 +13,6 @@ public class HelloWorld : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		Debug.Log ("Hello World");
+		Debug.Log ("Hey Mr. V I was able to do complete this challenge like a boss");
 	}
 }
