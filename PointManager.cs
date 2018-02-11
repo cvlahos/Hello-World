@@ -20,13 +20,14 @@ public class PointManager : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D target) 
 	{
-		if (target.tag == "PacMan") 
-		{
-			// the below three lines of code  are what happens when pac man gobbles up a point
-
-			gameplayController.score = gameplayController.score + 20; //add twenty points to the score
-			gameplayController.totalDots = gameplayController.totalDots - 1; // subtract a point from the total dot(point variable)
-			Destroy(gameObject); // destroy the point sprite
-		}
+		if (target.tag == "PacMan") // if the collision that happens is with the game object that is tagged PacMan
+			{
+				// the below three lines of code inside the if statement are what happens when pac man gobbles up a point
+				gameplayController.score = gameplayController.score + 20; //add twenty points to the score
+				gameplayController.totalDots = gameplayController.totalDots - 1; // subtract a point from the total dot(point variable)
+				Destroy(gameObject); // destroy the point sprite
+			}
 	} 
 }
+
+//End
